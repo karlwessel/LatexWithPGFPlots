@@ -14,7 +14,7 @@ You will need to install both.
 ## Installation
 Install the exporter with pip by 
 ```
-pip install --user git+https://github.com/karlwessel/LatexWithPGFPlots.git
+pip install git+https://github.com/karlwessel/LatexWithPGFPlots.git
 ```
 
 Install the julia module from within the REPL with
