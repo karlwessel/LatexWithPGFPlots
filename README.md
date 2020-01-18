@@ -1,22 +1,26 @@
 # LatexWithPGFPlots
 Custom Jupyter notebook exporter that can use pgfplots instead of images for plots.
 
-When using plotting libraries like PGFPlotsX.jl to create plots in a Jupyter notebook this package allows 
+When using plotting libraries like `PGFPlotsX.jl` to create plots in a Jupyter notebook this package allows 
 you to use the pgf source code instead of an image of the plot when exporting to LaTeX.
 
 The package consists of two parts:
-1. The julia module LatexWithPGFPlots that adds a custom MIME type "text/pgf" to plots created with 
-PGFPlotsX in a notebook
-2. and the python package latexwithpdf that adds a new exporter for notebooks that uses the pgf source in
+1. The julia module `LatexWithPGFPlots` that adds a custom MIME type `"text/pgf"` to plots created with 
+`PGFPlotsX` in a notebook
+2. and the python package `latexwithpdf` that adds a new exporter for notebooks that uses the pgf source in
 the exported LaTeX document instead of the image.
 You will need to install both.
 
 ## Installation
 Install the exporter with pip by 
-`pip install --user git+https://github.com/karlwessel/LatexWithPGFPlots.git`
+```
+pip install --user git+https://github.com/karlwessel/LatexWithPGFPlots.git
+```
 
 Install the julia module from within the REPL with
-`add https://github.com/karlwessel/LatexWithPGFPlots.git`
+```
+add https://github.com/karlwessel/LatexWithPGFPlots.git
+```
 
 ## Testing
 (Re)start jupyter-notebook, create a new julia notebook and add a new cell with
