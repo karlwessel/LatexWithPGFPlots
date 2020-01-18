@@ -19,7 +19,7 @@ pip install git+https://github.com/karlwessel/LatexWithPGFPlots.git
 
 Install the julia module from within the REPL with
 ```
-add https://github.com/karlwessel/LatexWithPGFPlots.git
+]add https://github.com/karlwessel/LatexWithPGFPlots.git
 ```
 
 ## Testing
