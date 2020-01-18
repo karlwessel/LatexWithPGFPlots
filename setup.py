@@ -9,6 +9,8 @@ setup(name='LatexWithPGFPlots',
       license='MIT',
       packages=['latexwithpgf'],
       zip_safe=False,
+      package_data={'templates': ['latexwithpgf/templates/pgfplots.tpl']},
+      include_package_data=True,
       entry_points = {
             'nbconvert.exporters': [
                 'latexwithpgf = latexwithpgf:LatexWithPGF',
