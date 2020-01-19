@@ -20,6 +20,11 @@ using Plots
     @test !endswith(d["text/pgf"], "\\end{document}\n")
 end
 
+@testset "PGFPlots integration" begin
+    p = PGFPlots.plot([1,2,3], [3,4,5])
+    @test "text/pgf" in keys(IJulia.display_dict(p))
+end
+
 #= tests do not work because Plots and IJulia behave differently outside a
 notebook
 
