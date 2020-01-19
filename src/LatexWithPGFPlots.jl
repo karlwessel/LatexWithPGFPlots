@@ -1,7 +1,8 @@
 module LatexWithPGFPlots
-import PGFPlotsX
+using PGFPlotsX
 import PGFPlots
-import IJulia
+import PGFPlots: save
+using IJulia
 import Plots
 
 function __init__()
@@ -20,7 +21,7 @@ Base.show(io::IO, ::MIME"text/pgf", p::PGFPlotsX.TikzDocument) =
 function Base.show(f::IO, ::MIME"text/pgf", p::PGFPlots.Plottable)
     tmp, _ = mktemp()
     file = "$(tmp).tex"
-    PGFPlots.save(file, p, include_preamble=false)
+    save(file, p, include_preamble=false)
     tex = read(file, String)
     print(f, tex)
 end
