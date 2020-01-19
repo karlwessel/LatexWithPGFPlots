@@ -66,5 +66,4 @@ You can also use `nbconvert` from the command line to convert a notebook to LaTe
 ## Still missing
 - pdf exporter
 - don't include not used images when exporting
-- support Plots.jl
 - support PGFPlots.jl
