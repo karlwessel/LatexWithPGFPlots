@@ -1,8 +1,8 @@
 module LatexWithPGFPlots
 using PGFPlotsX
-using PGFPlots
+import PGFPlots
 using IJulia
-using Plots
+import Plots
 
 function __init__()
     IJulia.register_mime(MIME"text/pgf"())
@@ -30,6 +30,13 @@ function Plots._ijulia__extra_mime_info!(
         plt::Plots.Plot{Plots.PGFPlotsXBackend},
         out::Dict)
     out["text/pgf"] = sprint(show, MIME("text/pgf"), plt.o.the_plot)
+    out
+end
+
+function Plots._ijulia__extra_mime_info!(
+        plt::Plots.Plot{Plots.PGFPlotsBackend},
+        out::Dict)
+    out["text/pgf"] = sprint(show, MIME("text/pgf"), PGFPlots.plot(plt.o))
     out
 end
 end # module

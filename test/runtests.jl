@@ -3,12 +3,14 @@ using LatexWithPGFPlots
 using PGFPlotsX
 using IJulia
 using Test
-using Plots
+using PGFPlots
+import Plots
+
 
 @test MIME("text/pgf") in IJulia.ijulia_mime_types
 
 @testset "PGFPlotsX integration" begin
-    p = @pgf Axis()
+    p = @pgf PGFPlotsX.Axis()
     @test "text/pgf" in keys(IJulia.display_dict(p))
 
     p = @pgf TikzPicture(p)
