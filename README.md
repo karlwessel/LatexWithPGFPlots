@@ -1,7 +1,7 @@
 # LatexWithPGFPlots
 Custom Jupyter notebook exporter that can use pgfplots instead of images for plots.
 
-When using plotting libraries like `PGFPlotsX.jl` to create plots in a Jupyter notebook this package allows 
+When using plotting libraries like `PGFPlotsX.jl` or `PGFPlots.jl` or their backends in `Plots.jl` to create plots in a Jupyter notebook this package allows 
 you to use the pgf source code instead of an image of the plot when exporting to LaTeX.
 
 The package consists of two parts:
