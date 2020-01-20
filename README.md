@@ -63,6 +63,7 @@ instead of an includegraphics. You can build the created tex file with xelatex.
 You can also use `nbconvert` from the command line to convert a notebook to LaTeX using
 `jupyter-nbconvert --to=latexwithpgf mynotebook.ipynb`
 
+You can also directly download a pdf version by chosing the "PDF via LaTeX with PGF" exporter from the menue "File -> Download as". Note that the compilation of the pdf probably takes much longer than the version without pgf images.
+
 ## Still missing
-- pdf exporter
-- don't include not used images when exporting
+- nothing from my side :)
