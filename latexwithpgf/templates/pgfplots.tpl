@@ -23,6 +23,9 @@
 
 ((* block data_other *))
 ((*- if output.data['text/pgf']: -*))
+    \begin{center}
     \input{((( output.metadata.filenames['text/pgf'] )))}
+    \end{center}
+    { \hspace*{\fill} \\}
 ((*- endif *))
 ((* endblock data_other *))
