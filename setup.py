@@ -14,6 +14,7 @@ setup(name='LatexWithPGFPlots',
       entry_points = {
             'nbconvert.exporters': [
                 'latexwithpgf = latexwithpgf:LatexWithPGF',
+                'pdfwithpgf = latexwithpgf:PDFWithPGFExporter',
             ],
         }
      )
