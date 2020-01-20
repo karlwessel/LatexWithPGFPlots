@@ -23,6 +23,6 @@
 
 ((* block data_other *))
 ((*- if output.data['text/pgf']: -*))
-    ((( output.data['text/pgf'] )))
+    \input{((( output.metadata.filenames['text/pgf'] )))}
 ((*- endif *))
 ((* endblock data_other *))

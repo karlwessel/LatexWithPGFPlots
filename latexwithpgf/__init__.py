@@ -37,4 +37,5 @@ class LatexWithPGF(LatexExporter):
             'text/markdown',
             'text/plain'
             ]
+        c['ExtractOutputPreprocessor']['extract_output_types'].add('text/pgf')
         return c
