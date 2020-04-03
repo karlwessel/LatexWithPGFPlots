@@ -9,6 +9,7 @@ The package consists of two parts:
 `PGFPlotsX` in a notebook
 2. and the python package `latexwithpdf` that adds a new exporter for notebooks that uses the pgf source in
 the exported LaTeX document instead of the image.
+
 You will need to install both.
 
 ## Installation
